@@ -18,6 +18,8 @@ public class AnimalHospitalMainV0 {
         catHospital.set(cat);
         catHospital.checkup();
 
-
+        dogHospital.set(dog);
+        Dog bigger = dogHospital.bigger(new Dog("멍멍이2", 200));
+        System.out.println("bigger = " + bigger);
     }
 }
