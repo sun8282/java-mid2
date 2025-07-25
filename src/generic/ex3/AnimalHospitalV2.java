@@ -7,12 +7,16 @@ public class AnimalHospitalV2 <T> {
     public void set(T animal) {this.animal = animal;}
 
     public void checkup() {
-        System.out.println("동물 이름: " + animal.getName());
-        System.out.println("동물 크기: " + animal.getSize());
-        animal.sound();
+        //컴파일 오류
+        //System.out.println("동물 이름: " + animal.getName());
+        //System.out.println("동물 크기: " + animal.getSize());
+        //animal.sound();
     }
 
     public T bigger(T target) {
-        return animal.getSize() > targer.getSize() ? animal : target;
+        //컴파일 오류
+        //return animal.getSize() > targer.getSize() ? animal : target;
+        return null;
+
     }
 }
