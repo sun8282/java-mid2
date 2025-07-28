@@ -4,7 +4,7 @@ import generic.animal.Animal;
 
 public class AnimalMethod {
 
-    public static <T extends Animal> void checkup(T t) {
+    public static <T extends Animal> void checkup(T animal) {
 
         System.out.println("동물 이름: " + animal.getName());
         System.out.println("동물 크기: " + animal.getSize());
