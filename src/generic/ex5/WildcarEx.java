@@ -8,6 +8,10 @@ public class WildcarEx {
         System.out.println("box = " + box.get());
     }
 
+    static void printWildcardV1(Box<?> box) {
+        System.out.println("? = " + box.get());
+    }
+
     static <T extends Animal> void printGenericV2(Box<T> box) {
         T t = box.get();
         System.out.println("이름 = " + t.getName());
