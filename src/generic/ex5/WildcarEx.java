@@ -22,4 +22,10 @@ public class WildcarEx {
         System.out.println("이름 = " + t.getName());
         return t;
     }
+
+    static Animal printAndReturnWildcard(Box<? extends Animal> box) {
+        Animal animal = box.get();
+        System.out.println("이름 = " + animal.getName());
+        return animal;
+    }
 }
