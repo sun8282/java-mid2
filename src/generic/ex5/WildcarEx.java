@@ -8,7 +8,7 @@ public class WildcarEx {
         System.out.println("box = " + box.get());
     }
 
-    static void printWildcardV1(Box<?> box) {
+    static void printWildcardV1(Box<? extends Animal> box) {
         System.out.println("? = " + box.get());
     }
 
