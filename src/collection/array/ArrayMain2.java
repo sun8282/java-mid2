@@ -16,15 +16,20 @@ public class ArrayMain2 {
 
         int index = 2;
         int value = 4;
-
         addAtIndex(arr, index, value);
+
+        addLast(arr, 5);
     }
 
-    private static void addAtIndex(int[] arr, int index, int value) {
+    private static void addLast(int[] arr, int newValue) {
+        arr[arr.length -1] = newValue;
+    }
+
+    private static void addAtIndex(int[] arr, int index, int newValue) {
         for (int i = arr.length - 1; i > index; i--) {
             arr[i] = arr[i -1];
         }
-        arr[index] = value;
+        arr[index] = newValue;
     }
 
     private static void addFirst(int[] arr, int newValue) {
