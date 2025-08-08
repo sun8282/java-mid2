@@ -56,6 +56,7 @@ public class MyArrayListV4<E> {
         elementData = newArr;
     }
 
+    @SuppressWarnings("unchecked")
     public E get(int index) {
         return (E) elementData[index];
     }
