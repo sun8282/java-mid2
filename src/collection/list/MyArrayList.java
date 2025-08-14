@@ -17,10 +17,12 @@ public class MyArrayList<E> implements MyList<E> {
         elementData = new Object[initialCapacity];
     }
 
+    @Override
     public int size() {
         return size;
     }
 
+    @Override
     public void add(E e) {
         if(size == elementData.length) {
             grow();
@@ -29,6 +31,7 @@ public class MyArrayList<E> implements MyList<E> {
         size ++;
     }
 
+    @Override
     public void add(int index, E e) {
         if(size == elementData.length) {
             grow();
@@ -57,6 +60,7 @@ public class MyArrayList<E> implements MyList<E> {
     }
 
     @SuppressWarnings("unchecked")
+    @Override
     public E get(int index) {
         return (E) elementData[index];
     }
@@ -67,6 +71,7 @@ public class MyArrayList<E> implements MyList<E> {
         return oldValue;
     }
 
+    @Override
     public E remove(int index) {
         E oldValue = get(index);
         shiftLeftFrom(index);
@@ -82,6 +87,7 @@ public class MyArrayList<E> implements MyList<E> {
         }
     }
 
+    @Override
     public int indexOf(E o) {
         for (int i = 0; i < size; i++) {
             if (o.equals(elementData[i])) {
