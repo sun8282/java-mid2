@@ -1,5 +1,7 @@
 package collection.set;
 
+import java.util.Arrays;
+
 public class MyHashSetV0 {
 
     private int[] elementData = new int[10];
@@ -22,5 +24,17 @@ public class MyHashSetV0 {
             }
         }
         return false;
+    }
+
+    public int size() {
+        return size;
+    }
+
+    @Override
+    public String toString() {
+        return "MyHashSetV0{" +
+                "elementData=" + Arrays.toString(elementData) +
+                ", size=" + size +
+                '}';
     }
 }
