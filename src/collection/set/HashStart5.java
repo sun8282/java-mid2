@@ -13,5 +13,25 @@ public class HashStart5 {
         for (int i = 0; i < CAPACITY; i++) {
             buckets[i] = new LinkedList<>();
         }
+
+        System.out.println("buckets = " + Arrays.toString(buckets));
+        add(buckets, 1);
+        add(buckets, 2);
+        add(buckets, 5);
+        add(buckets, 8);
+        add(buckets, 14);
+        add(buckets, 99);
+    }
+
+    private static void add(LinkedList<Integer>[] buckets, int value) {
+        int hashIndex = hashIndex(value);
+        LinkedList<Integer> bucket = buckets[hashIndex];
+        if (!bucket.contains(value)) {
+            bucket.add(value);
+        }
+    }
+
+    static int hashIndex(int value) {
+        return value % CAPACITY;
     }
 }
