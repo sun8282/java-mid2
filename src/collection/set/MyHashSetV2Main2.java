@@ -13,5 +13,10 @@ public class MyHashSetV2Main2 {
         System.out.println("jpa.hashCode() = " + jpa.hashCode());
         System.out.println("java.hashCode() = " + java.hashCode());
         System.out.println("spring.hashCode() = " + spring.hashCode());
+
+        set.add(hi);
+        set.add(jpa);
+        set.add(java);
+        set.add(spring);
     }
 }
