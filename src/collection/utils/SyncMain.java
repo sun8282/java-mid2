@@ -15,6 +15,5 @@ public class SyncMain {
         System.out.println(list.getClass());
         List<Integer> synchronizedList = Collections.synchronizedList(list);
         System.out.println("synchronizedList = " + synchronizedList.getClass());
-
     }
 }
